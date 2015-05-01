@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference android:key="setting_quick_start" android:title="快速建立"
+                        android:summary="点击通知栏快速建立提醒"
+                        android:defaultValue="false"
+                        android:enabled="true"
+            />
+
+    <SwitchPreference  android:key="setting_light" android:title="点亮呼吸灯"
+                        android:summary="通知栏有未读通知时点亮呼吸灯"
+                        android:defaultValue="true"
+                        android:enabled="true"
+            />
+    <SwitchPreference android:key="setting_clip" android:title="监听剪切板"
+                        android:summary="其他地方复制内容时自动创建提醒"
+                        android:defaultValue="true"
+            />
+    <SwitchPreference android:key="setting_apps_notify" android:title="监听应用通知"
+        android:summary="监听其他应用的通知信息"
+        android:defaultValue="true"
+        android:enabled="true"
+        />
+
+    <ListPreference android:title="主题" android:key="theme" android:enabled="true" android:defaultValue="1" android:entries="@array/pre_settings_theme_name" android:entryValues="@array/pre_settings_theme_value"/>
+    <ListPreference android:title="图表" android:key="chart" android:defaultValue="2" android:entries="@array/pre_settings_chart_name" android:entryValues="@array/pre_settings_chart_value"/>
+
+    <SwitchPreference android:key="setting_auto_clear" android:title="自动清理"
+                        android:summary="自动清理本月以前的提醒记录"
+                        android:defaultValue="false"
+            />
+    <Preference  android:key="pref_clear" android:title="清除所有提醒数据"  android:enabled="true"/>
+
+    <PreferenceScreen android:title="关于" >
+
+        <Preference android:title="作者" android:summary="疾风Hua">
+            <intent android:action="android.intent.action.VIEW"
+                    android:data="http://weibo.com/u/1667733215"/>
+        </Preference>
+        <Preference android:title="版本号" android:summary="@string/app_version"/>
+        <Preference  android:key="pref_setting_feedback" android:title="反馈测试信息" android:enabled="true"/>
+    </PreferenceScreen>
+
+
+</PreferenceScreen>

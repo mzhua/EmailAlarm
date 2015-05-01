@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menu_my_add"
+          android:title="@string/menu_add"
+          android:icon="@drawable/ic_action_new"
+          android:showAsAction="always"/>
+
+    <item android:id="@+id/menu_my_history"
+          android:title="@string/menu_history_alarms"
+          android:showAsAction="never"/>
+    <item android:id="@+id/menu_my_flyme_setting"
+          android:title="@string/menu_setting"
+          android:showAsAction="never"
+        android:visible="true"/>
+    <item android:id="@+id/menu_my_test" android:title="test"
+          android:showAsAction="never"
+          android:visible="false"/>
+</menu>

@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_gr"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+            <!--时间-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/tv_gr_start"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="@string/date"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+
+                    android:clickable="true"
+                    android:onClick="showDatePickerDialog">
+
+                    <TextView
+                        android:id="@+id/tv_gr_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:text="2014年10月18日"
+
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_gr_more_0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tv_gr_date"
+                        android:layout_alignParentRight="true"
+                        android:paddingBottom="10dp"
+                        android:src="@drawable/multitask_triangle" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <include layout="@layout/divider_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/tv_gr_title_time"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/time"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:clickable="true"
+                    android:onClick="showTimePickerDialog">
+
+                    <TextView
+                        android:id="@+id/tv_gr_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:text="12:00"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_gr_more_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tv_gr_time"
+                        android:layout_alignParentRight="true"
+                        android:paddingBottom="10dp"
+                        android:src="@drawable/multitask_triangle" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <include layout="@layout/divider_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <!--地点-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_gr_location"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="@string/location"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_gr_location"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:hint="输入地点"
+                    android:maxLines="2"
+                    android:singleLine="false"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <include layout="@layout/divider_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <!--详细-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_gr_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/detail"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_gr_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="3"
+                    android:gravity="top"
+                    android:hint="输入详细信息"
+                    android:maxLines="5"
+                    android:singleLine="false"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <include layout="@layout/divider_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <!--提醒-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/remind"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:clickable="true"
+                    android:onClick="showRemindMenu">
+
+                    <TextView
+                        android:id="@+id/tv_gr_remind"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:text="@string/remind_default"
+
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tv_gr_remind"
+                        android:layout_alignParentRight="true"
+                        android:paddingBottom="10dp"
+                        android:src="@drawable/multitask_triangle" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <include layout="@layout/divider_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <!--铃声-->
+            <LinearLayout
+                android:id="@+id/ll_gr_ringtone"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/selector_list_item"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:onClick="showRingtonePicker"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:id="@+id/gr_ll_ring"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_gr_ringtone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ringtone"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tv_gr_ringtone_summary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_gr_ringtone"
+                            android:text="@string/ringtone_default"
+                            android:textColor="@color/summary"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_more_right" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <include layout="@layout/divider_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <!--振动-->
+
+
+            <Switch
+                android:id="@+id/sw_gr_vibrate"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_list_item"
+                android:clickable="true"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/vibrate"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+
+            <include layout="@layout/divider_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+
+            <Button
+                android:id="@+id/bt_gr_delete"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/theme_1"
+                android:onClick="delAlarm"
+
+                android:text="@string/activity_btn_delete"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

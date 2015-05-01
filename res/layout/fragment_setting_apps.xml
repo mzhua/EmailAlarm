@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:eaview="http://schemas.android.com/apk/res/im.mz.EmailAlarm"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    >
+
+    <im.mz.EmailAlarm.view.EASwitch
+        eaview:key="@string/SETTING_APPS_NOTIFY"
+        android:id="@+id/sw_fragment_setting_apps"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/listItemHeight"
+        android:paddingLeft="@dimen/paddingLeft"
+        android:paddingRight="@dimen/paddingRight"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/selector_list_item"
+        android:checked="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/fragment_apps_item_listen"
+        android:textSize="@dimen/mainText" />
+
+    <include
+        layout="@layout/divider_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <im.mz.EmailAlarm.view.EASwitch
+        eaview:key="@string/SETTING_APPS_AUTO_REMOVE_NOTIFY"
+        eaview:defaultValue="false"
+        android:id="@+id/sw_fragment_setting_apps_notify"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/listItemHeight"
+        android:paddingLeft="@dimen/paddingLeft"
+        android:paddingRight="@dimen/paddingRight"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/selector_list_item"
+        android:checked="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:singleLine="true"
+        android:text="@string/fragment_apps_item_remove_notify"
+        android:textSize="@dimen/mainText"
+        android:visibility="gone"/>
+
+
+
+    <RelativeLayout android:id="@+id/rl_fragment_setting_apps_notify_remove_delay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/listItemHeight"
+        android:paddingLeft="@dimen/paddingLeft"
+        android:paddingRight="@dimen/paddingRight"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/selector_list_item"
+        android:descendantFocusability="blocksDescendants"
+        android:clickable="true"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/listItemHeight"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:focusable="false"
+                android:gravity="center_vertical|left"
+                android:text="延迟移除通知"
+                android:textColor="@color/black"
+                android:textSize="@dimen/mainText" />
+
+            <TextView android:id="@+id/tv_fragment_setting_theme_summary"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:gravity="center_vertical|left"
+                android:text="延迟5S"
+                android:textColor="@color/summary"
+                android:textSize="@dimen/summaryText" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="3dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/multitask_triangle"/>
+
+    </RelativeLayout>
+    <include
+        layout="@layout/divider_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <ListView
+        android:id="@+id/lv_fragment_setting_apps"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"></ListView>
+
+    <LinearLayout
+        android:id="@+id/ll_fragment_setting_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+
+            android:indeterminateDrawable="@drawable/progress_bar_style_color"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loading"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

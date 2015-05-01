@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:eaPreferenceView="http://schemas.android.com/apk/res/im.mz.EmailAlarm"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <im.mz.EmailAlarm.view.EASwitch
+        eaPreferenceView:key="test"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/listItemHeight"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/selector_list_item"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingLeft="@dimen/paddingLeft"
+        android:paddingRight="@dimen/paddingRight"
+        android:text="快速建立"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:textSize="@dimen/mainText" />
+</LinearLayout>

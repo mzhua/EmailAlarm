@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_setting_file_selector"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    >
+
+
+    <FrameLayout android:id="@+id/fl_setting_file_selector_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:visibility="gone">
+
+        </FrameLayout>
+    <ListView
+        android:id="@+id/lv_setting_file_selector"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"></ListView>
+
+    <LinearLayout
+        android:id="@+id/ll_fragment_setting_file_selector_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+
+            android:indeterminateDrawable="@drawable/progress_bar_style_color"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loading"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

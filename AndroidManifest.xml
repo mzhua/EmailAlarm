@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="im.mz.EmailAlarm"
+          android:versionCode="2"
+          android:versionName="@string/app_version">
+    <uses-sdk android:minSdkVersion="19"
+            android:targetSdkVersion="19"/>
+    <application android:label="@string/app_name"
+                 android:icon="@drawable/ic_launcher"
+                 android:excludeFromRecents="true"
+                 android:uiOptions="splitActionBarWhenNarrow"
+                 android:theme="@style/AppTheme">
+        <activity android:name=".activity.MyActivity"
+                  android:excludeFromRecents="true"
+                  android:screenOrientation="portrait"
+                  android:launchMode="singleInstance"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.GenerateResultActivity" android:label="解析结果"
+                  android:excludeFromRecents="true"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="stateVisible|adjustResize"
+                  android:parentActivityName="im.mz.EmailAlarm.activity.MyActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                       android:value="im.mz.EmailAlarm.activity.MyActivity"/>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+            <!-- This activity also handles "SEND" and "SEND_MULTIPLE" with media data -->
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="application/vnd.google.panorama360+jpg"/>
+                <data android:mimeType="image/*"/>
+                <data android:mimeType="video/*"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.SettingActivity" android:label="设置"
+                  android:excludeFromRecents="true"
+                  android:screenOrientation="portrait"
+                  android:parentActivityName="im.mz.EmailAlarm.activity.MyActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                       android:value="im.mz.EmailAlarm.activity.MyActivity"/>
+        </activity>
+        <activity android:name=".activity.MPTestActivity" android:label="MP"/>
+        <activity android:name=".activity.SettingFragmentActivity" android:label="设置"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".activity.BaseFragmentActivity"/>
+        <activity android:name=".activity.FlymeActivity" />
+
+        <receiver android:name=".receiver.AutoStartReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name=".service.AlarmService" android:excludeFromRecents="true"/>
+        <service android:name=".service.RemindService" android:excludeFromRecents="true"/>
+        <service android:name=".service.NLService"
+                 android:label="@string/app_name"
+                 android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+
+    </application>
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+</manifest>

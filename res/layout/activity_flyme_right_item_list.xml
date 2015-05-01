@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_list_item"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ceshi "/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/listItemHeight"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_flyme_right_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:focusable="false"
+            android:gravity="center_vertical|left"
+            android:text="main Text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/mainText" />
+
+        <TextView
+            android:id="@+id/tv_flyme_right_item_summary"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:gravity="center_vertical|left"
+            android:text="sub Text"
+            android:textColor="@color/summary"
+            android:textSize="@dimen/summaryText" />
+    </LinearLayout>
+
+</LinearLayout>

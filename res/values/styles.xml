@@ -1,0 +1,50 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.DeviceDefault.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="android:actionOverflowButtonStyle">@style/CustomActionButtonOverflowStyle</item>
+        <item name="android:actionButtonStyle">@style/CustomActionButtonStyle</item>
+
+    </style>
+    
+    
+    <!-- ActionBar styles -->
+    <style name="MyActionBar"
+           parent="android:style/Widget.DeviceDefault.Light.ActionBar">
+        <item name="android:background">@color/theme_1</item>
+        <item name="android:backgroundSplit">@drawable/mz_smartbar_background</item>
+        <item name="android:titleTextStyle">@style/MyActionBarTitleText</item>
+        <item name="android:displayOptions">useLogo|showHome|showTitle</item>
+    </style>
+
+    <!-- overflow图标 -->
+    <style name="CustomActionButtonOverflowStyle" parent="@android:style/Widget.DeviceDefault.Light.ActionButton.Overflow">
+        <item name="android:src">@drawable/mz_ic_sb_more</item>
+    </style>
+
+    <!-- back键图标 通过style定制back方法只在flyme4.0系统有效-->
+    <style name="CustomActionButtonStyle" parent="@android:style/Widget.DeviceDefault.Light.ActionButton">
+        <item name="android:src">@drawable/mz_ic_sb_back</item>
+    </style>
+
+    <!-- ActionBar title text -->
+    <style name="MyActionBarTitleText"
+           parent="android:TextAppearance.DeviceDefault.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+</resources>

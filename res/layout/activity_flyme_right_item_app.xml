@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selector_list_item"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/listItemHeight"
+        android:paddingLeft="@dimen/paddingLeft"
+        android:paddingRight="@dimen/paddingRight">
+
+        <ImageView
+            android:id="@+id/iv_flyme_app_icon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_flyme_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="60dp"
+            android:layout_toRightOf="@+id/iv_flyme_app_icon"
+
+            android:singleLine="true"
+            android:text="EmailAlarm"
+            android:textColor="#000"
+            android:textSize="@dimen/mainText" />
+
+        <Button
+            android:id="@+id/btn_flyme_app_status"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_theme_1"
+            android:text="@string/btn_app_add"
+            android:textColor="@color/white"
+            android:textSize="@dimen/btnText" />
+    </RelativeLayout>
+
+</RelativeLayout>
+

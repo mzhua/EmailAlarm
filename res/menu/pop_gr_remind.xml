@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_pop_gr_remind_0" android:title="不提前"/>
+    <item android:id="@+id/menu_pop_gr_remind_10" android:checked="true" android:checkable="true"  android:title=" 提前十分钟提醒"/>
+    <item android:id="@+id/menu_pop_gr_remind_30" android:title=" 提前半小时提醒"/>
+    <item android:id="@+id/menu_pop_gr_remind_60" android:title=" 提前一小时提醒"/>
+</menu>

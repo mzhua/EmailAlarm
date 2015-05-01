@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EmailAlarm</string>
+
+    <string name="theme_default">Green</string>
+    <string name="theme_blue">Blue</string>
+    <string name="theme_green">Green</string>
+    <string name="theme_yellow">Yellow</string>
+    <string name="theme_red">Red</string>
+
+    <string name="chart_default">Pie</string>
+    <string name="chart_pie">Pie</string>
+    <string name="chart_column">Bar</string>
+
+    <!--preferece key-->
+    <string name="SETTING_QUICK_START">setting_quick_start</string>
+    <string name="SETTING_LIGHT">setting_light</string>
+    <string name="SETTING_CLIP">setting_clip</string>
+    <string name="SETTING_AUTO_CLEAR">setting_auto_clear</string>
+    <string name="SETTING_THEME">setting_theme</string>
+    <string name="SETTING_CHART">setting_chart</string>
+    <string name="SETTING_APPS_NOTIFY">setting_apps_notify</string>
+    <string name="SETTING_APPS_AUTO_REMOVE_NOTIFY">setting_apps_auto_remove_notify</string>
+    <string name="SETTING_NOTIFY_AUTH">setting_notify_auth</string>
+    <string name="FLAG_FIRST_START">flag_first_start</string>
+
+
+    <string name="noDataDesc">No alarms\nClick the + to add one</string>
+    <string name="noDataDesc_history">No history alarms</string>
+
+    <string name="toast_no_auth">Please authorize the access of reading notify to the app, or you cancel enjoy some wonderful functions.</string>
+    <string name="toast_data_updating">The data is updating, please wait for a moment...</string>
+    <string name="toast_main_list_tips">Click the right area to edit the alarm</string>
+    <string name="toast_main_list_tips_on">Turn on</string>
+    <string name="toast_main_list_tips_off">Turn off</string>
+
+    <string name="menu_history_alarms">History alarms</string>
+    <string name="menu_current_alarms">Current alarms</string>
+    <string name="menu_add">Add</string>
+    <string name="menu_setting">Setting</string>
+    <string name="main_list_item_no_location">No location</string>
+    <string name="guide_btn">Get it</string>
+    <string name="guide_next_alarm">The next alarm info shows here</string>
+    <string name="guide_time">This clock is a counter clockwise rotation. One circle of the hour hand stands for 24 hours,one circle of the minutes hand stands for 60 minutes and one circle of the seconds hand stands for 60 seconds.</string>
+    <string name="guide_time_right">Day、hour and minutes</string>
+    <string name="guide_btn1">Grant the permission of access notifies to the app</string>
+    <string name="guide_btn2">Enjoy it</string>
+    <string name="guide_location">Location\n</string>
+    <string name="fragment_count_text">Remind times of this week</string>
+    <string name="noData">No data</string>
+    <string name="week">week</string>
+    <string name="action_bar_title_add_alarm">Add alarm</string>
+    <string name="action_bar_title_edit_alarm">Edit alarm</string>
+    <string name="activity_result_mute">mute</string>
+    <string name="activity_result_ringtone_picker_title">Pick a ringtone</string>
+    <string name="activity_result_remind_title">Pick a remind</string>
+    <string name="toast_validate_time">The remind time must later than now</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="location">Location</string>
+    <string name="detail">Details</string>
+    <string name="remind">Reminds</string>
+    <string name="remind_default">30 minutes in advance</string>
+    <string name="ringtone">Ringtone</string>
+    <string name="ringtone_default">Default ringtone</string>
+    <string name="vibrate">Vibrate</string>
+    <string name="activity_btn_delete">Delete</string>
+
+    <string name="actionbar_theme">Theme</string>
+    <string name="actionbar_assit">Assist</string>
+    <string name="actionbar_apps">Listener</string>
+    <string name="actionbar_about">About</string>
+    <string name="fragment_item_theme_theme">Theme</string>
+    <string name="fragment_item_theme_chart">Chart</string>
+    <string name="fragment_item_assist_quick_start">Quick create</string>
+    <string name="fragment_item_assist_light">Breathing light</string>
+    <string name="fragment_item_assist_clipboard">Listen the clipboard</string>
+    <string name="fragment_item_assist_auto_clear">Auto clear</string>
+    <string name="fragment_item_assist_import_excel">Import excel</string>
+    <string name="fragment_item_assist_clear_all">Clear all data</string>
+    <string name="fragment_search_hint">Search apps</string>
+    <string name="fragment_apps_item_listen">Listen notifies</string>
+    <string name="fragment_apps_item_remove_notify">Remove after listen</string>
+    <string name="loading">Loading...</string>
+    <string name="fragment_item_author">Author</string>
+    <string name="author">疾风Hua</string>
+    <string name="fragment_item_version">Version</string>
+    <string name="fragment_item_feedback">Feedback</string>
+    <string name="fragment_item_assist_excel_sheet_hint">Sheet column number</string>
+    <string name="fragment_item_assist_excel_time_hint">Time column number</string>
+    <string name="fragment_item_assist_excel_location_hint">Location column number</string>
+    <string name="fragment_item_assist_excel_detail_hint">Detail column number</string>
+    <string name="fragment_item_assist_excel_file">Select a excel file</string>
+    <string name="fragment_item_assist_excel_path">no file selected</string>
+    <string name="toast_empty_folder">Empty folder</string>
+    <string name="toast_select_excel_file">Please select a excel file</string>
+    <string name="toast_sdcard_not_exist">SD card not exists</string>
+    <string name="activity_file_search_hint">Search in this folder</string>
+    <string name="actionbar_disk">Disk</string>
+    <string name="btn_app_add">Add</string>
+    <string name="btn_app_added">Added</string>
+    <string name="fragment_excel_toast">Please input the right number above</string>
+    <string name="fragment_dialog_msg">Data importing, you can continue other operations...</string>
+    <string name="toast_data_import_finish">Data import finish</string>
+    <string name="fragment_item_assist_auto_load_count">Auto load data counts</string>
+    <string name="auto_load_all">Load all</string>
+    <string name="fragment_item_guide">Read the guide again</string>
+
+</resources>

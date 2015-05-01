@@ -1,0 +1,232 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/paddingLeft"
+            android:paddingRight="@dimen/paddingRight"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView
+                android:text="Sheet"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/mainText"/>
+            <EditText android:id="@+id/et_fragment_assist_excel_sheet"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/listItemHeight"
+                android:layout_weight="3"
+                android:text="1"
+                android:hint="@string/fragment_item_assist_excel_sheet_hint"
+                android:inputType="number"
+                android:numeric="integer"/>
+        </LinearLayout>
+        <include
+            layout="@layout/divider_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/paddingLeft"
+            android:paddingRight="@dimen/paddingRight"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView
+                android:text="@string/time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/mainText"/>
+            <EditText android:id="@+id/et_fragment_assist_excel_time"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/listItemHeight"
+                android:layout_weight="3"
+                android:hint="@string/fragment_item_assist_excel_time_hint"
+                android:inputType="number"
+                android:numeric="integer"/>
+            </LinearLayout>
+        <include
+            layout="@layout/divider_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/paddingLeft"
+            android:paddingRight="@dimen/paddingRight"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView
+                android:text="@string/location"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/mainText"/>
+            <EditText android:id="@+id/et_fragment_assist_excel_location"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/listItemHeight"
+                android:layout_weight="3"
+                android:hint="@string/fragment_item_assist_excel_location_hint"
+                android:inputType="number"
+                android:numeric="integer"/>
+        </LinearLayout>
+        <include
+            layout="@layout/divider_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/paddingLeft"
+            android:paddingRight="@dimen/paddingRight"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView
+                android:text="@string/detail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/mainText"/>
+            <EditText android:id="@+id/et_fragment_assist_excel_detail"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/listItemHeight"
+                android:layout_weight="3"
+                android:hint="@string/fragment_item_assist_excel_detail_hint"
+                android:inputType="number"
+                android:numeric="integer"/>
+        </LinearLayout>
+        <include
+            layout="@layout/divider_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <RelativeLayout
+            android:id="@+id/rl_fragment_setting_import_excel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/listItemHeight"
+            android:background="@drawable/selector_list_item"
+            android:clickable="true"
+            android:descendantFocusability="blocksDescendants"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/paddingLeft"
+            android:paddingRight="@dimen/paddingRight">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/listItemHeight"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="left"
+                    android:layout_weight="2"
+                    android:focusable="false"
+                    android:gravity="center_vertical|left"
+
+                    android:text="@string/fragment_item_assist_excel_file"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/mainText"
+                    />
+
+                <TextView android:id="@+id/tv_fragment_setting_assist_excel_import_path"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:gravity="center_vertical|left"
+                    android:singleLine="true"
+                    android:maxLength="100"
+                    android:text="@string/fragment_item_assist_excel_path"
+                    android:textColor="@color/summary"
+                    android:textSize="@dimen/summaryText" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_more_right"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <include
+            layout="@layout/divider_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/paddingLeft"
+            android:paddingRight="@dimen/paddingRight"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+            <TextView
+                android:text="提醒人"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/mainText"/>
+            <EditText android:id="@+id/et_fragment_assist_excel_sms_person"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/listItemHeight"
+                android:layout_weight="3"
+                android:hint="短信提醒人号码列号"
+                android:inputType="number"
+                android:numeric="integer"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/paddingLeft"
+            android:paddingRight="@dimen/paddingRight"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+            <TextView
+                android:text="内容"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/mainText"/>
+            <EditText android:id="@+id/et_fragment_assist_excel_sms_content"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/listItemHeight"
+                android:layout_weight="3"
+                android:hint="短信内容列号"
+                android:inputType="number"
+                android:numeric="integer"/>
+        </LinearLayout>
+
+        <TextView
+            android:text="1、如果你的Excel文档是Office-2003以后版本创建的，请先另存为Excel97-2003的格式\n2、请在电脑上将日期对应列的单元格格式设置为日期\n3、第n个sheet即sheet号为n，默认读取第一个sheet的数据\n4、第n列对应的列号即为n"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/paddingLeft"
+            android:paddingRight="@dimen/paddingRight"
+            android:paddingTop="15dp"
+            android:textColor="@color/red"
+            android:textSize="@dimen/summaryText"
+            android:gravity="left"/>
+
+
+    </LinearLayout>
+</ScrollView>

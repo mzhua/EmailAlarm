@@ -1,0 +1,103 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:eaview="http://schemas.android.com/apk/res/im.mz.EmailAlarm"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <im.mz.EmailAlarm.view.EASwitch
+            eaview:key="@string/SETTING_QUICK_START"
+            eaview:defaultValue="false"
+            android:id="@+id/sw_fragment_setting_quick_start"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/listItemHeight"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/selector_list_item"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingLeft="@dimen/paddingLeft"
+            android:paddingRight="@dimen/paddingRight"
+            android:text="@string/fragment_item_assist_quick_start"
+            android:textSize="@dimen/mainText" />
+
+        <include
+            layout="@layout/divider_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <im.mz.EmailAlarm.view.EASwitch
+            eaview:key="@string/SETTING_LIGHT"
+            android:id="@+id/sw_fragment_setting_light"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/listItemHeight"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/selector_list_item"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingLeft="@dimen/paddingLeft"
+            android:paddingRight="@dimen/paddingRight"
+            android:text="@string/fragment_item_assist_light"
+            android:textSize="@dimen/mainText" />
+
+        <include
+            layout="@layout/divider_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <im.mz.EmailAlarm.view.EASwitch
+            eaview:key="@string/SETTING_CLIP"
+            android:id="@+id/sw_fragment_setting_clip"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/listItemHeight"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/selector_list_item"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingLeft="@dimen/paddingLeft"
+            android:paddingRight="@dimen/paddingRight"
+            android:text="@string/fragment_item_assist_clipboard"
+            android:textSize="@dimen/mainText" />
+
+        <include
+            layout="@layout/divider_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl_fragment_setting_auth"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/listItemHeight"
+            android:background="@drawable/selector_list_item"
+            android:clickable="true"
+            android:descendantFocusability="blocksDescendants"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/paddingLeft"
+            android:paddingRight="@dimen/paddingRight"
+            android:visibility="gone">
+
+            <include
+                layout="@layout/divider_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:focusable="false"
+                android:gravity="center_vertical|left"
+                android:text="授予读取通知的权限"
+                android:textColor="@color/black"
+                android:textSize="@dimen/mainText" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</ScrollView>

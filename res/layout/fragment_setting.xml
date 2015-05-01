@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_fragment_flyme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+
+    <ListView
+        android:id="@+id/lv_fragment_flyme_left"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:divider="@color/divider"
+        android:dividerHeight="1dp"/>
+
+    <include
+        layout="@layout/divider_vertical"
+        android:layout_width="1dp"
+        android:layout_height="match_parent" />
+
+
+    <FrameLayout
+        android:id="@+id/setting_fragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"></FrameLayout>
+
+</LinearLayout>

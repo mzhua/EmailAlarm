@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleTime">
+        <attr name="mode" format="integer">
+            <enum name="anticlockwise" value="0"/>
+            <enum name="clockwise" value="1"/>
+        </attr>
+        <attr name="animation" format="boolean"/>
+        <attr name="strokeWidth" format="dimension|reference"/>
+        <attr name="standard" format="integer">
+            <enum name="H12" value="12"/>
+            <enum name="H24" value="24"/>
+        </attr>
+        <attr name="showDay" format="boolean"/>
+        <attr name="showHour" format="boolean"/>
+        <attr name="showMinute" format="boolean"/>
+        <attr name="showSecond" format="boolean"/>
+
+        <attr name="dayTextSize" format="dimension|reference"/>
+    </declare-styleable>
+    <declare-styleable name="EAPreferenceView">
+        <attr name="key" format="string|reference"/>
+        <attr name="defaultValue" format="boolean"/>
+    </declare-styleable>
+</resources>

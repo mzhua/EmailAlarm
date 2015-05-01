@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mainText">18sp</dimen>
+    <dimen name="summaryText">12sp</dimen>
+    <dimen name="btnText">13sp</dimen>
+    <dimen name="listItemHeight">55dp</dimen>
+    <dimen name="paddingLeft">10dp</dimen>
+    <dimen name="paddingRight">10dp</dimen>
+    <dimen name="imageWidth">48dp</dimen>
+    <dimen name="imageHeight">48dp</dimen>
+
+</resources>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EmailAlarm</string>
+    <string name="app_version">1.0.3</string>
+
+    <!--主题-->
+    <string name="theme_default">魅蓝</string>
+    <string name="theme_blue">魅蓝</string>
+    <string name="theme_green">草绿</string>
+    <string name="theme_yellow">麦黄</string>
+    <string name="theme_red">骚红</string>
+
+    <!--图表-->
+    <string name="chart_default">饼图</string>
+    <string name="chart_pie">饼图</string>
+    <string name="chart_column">柱图</string>
+
+    <!--setting中左侧的项目名称-->
+    <string name="actionbar_theme">主题显示</string>
+    <string name="actionbar_assit">辅助功能</string>
+    <string name="actionbar_data">提醒数据</string>
+    <string name="actionbar_apps">监听程序</string>
+    <string name="actionbar_about">关于/反馈</string>
+
+    <!--preferece key-->
+    <string name="SETTING_QUICK_START">setting_quick_start</string>
+    <string name="SETTING_LIGHT">setting_light</string>
+    <string name="SETTING_CLIP">setting_clip</string>
+    <string name="SETTING_AUTO_CLEAR">setting_auto_clear</string>
+    <string name="SETTING_THEME">setting_theme</string>
+    <string name="SETTING_CHART">setting_chart</string>
+    <string name="SETTING_APPS_NOTIFY">setting_apps_notify</string>
+    <string name="SETTING_APPS_AUTO_REMOVE_NOTIFY">setting_apps_auto_remove_notify</string>
+    <string name="SETTING_NOTIFY_AUTH">setting_notify_auth</string>
+    <string name="FLAG_FIRST_START">flag_first_start</string>
+
+    <string name="noDataDesc">最近无提醒\n点击下面的 + 来添加</string>
+    <string name="noDataDesc_history">无历史提醒</string>
+
+    <string name="toast_no_auth">请授予读取通知的权限，否则无法使用完整功能。</string>
+    <string name="toast_data_updating">数据更新中...</string>
+    <string name="toast_main_list_tips">点击时间右边区域可进入编辑</string>
+    <string name="toast_main_list_tips_on">开启</string>
+    <string name="toast_main_list_tips_off">关闭</string>
+
+    <string name="menu_history_alarms">历史提醒</string>
+    <string name="menu_current_alarms">当前提醒</string>
+    <string name="menu_add">添加</string>
+    <string name="menu_setting">设置</string>
+
+    <string name="main_list_item_no_location">未设置地点</string>
+    <string name="guide_btn">知道了</string>
+    <string name="guide_next_alarm">此区域显示下一次提醒的信息</string>
+    <string name="guide_time">\"逆时针旋转的时分秒倒计时，时针1圈为24小时，分针1圈为1小时，秒针一圈为1分钟。\"</string>
+    <string name="guide_time_right">天数、小时和分的倒计时</string>
+    <string name="guide_btn1">勾选读取通知的权限</string>
+    <string name="guide_btn2">开始使用</string>
+    <string name="guide_location">事件地点\n</string>
+    <string name="fragment_count_text">本周提醒次数</string>
+    <string name="noData">暂无数据</string>
+    <string name="week">星期</string>
+    <string name="action_bar_title_add_alarm">添加提醒</string>
+    <string name="action_bar_title_edit_alarm">编辑提醒</string>
+    <string name="activity_result_mute">静音</string>
+    <string name="activity_result_ringtone_picker_title">选择提醒铃声</string>
+    <string name="activity_result_remind_title">选择提醒</string>
+    <string name="toast_validate_time">提醒时间必须大于当前时间，请重新编辑时间</string>
+    <string name="date">日期</string>
+    <string name="time">时间</string>
+    <string name="location">地点</string>
+    <string name="detail">详细</string>
+    <string name="remind">提醒</string>
+    <string name="remind_default">提前30分钟提醒</string>
+    <string name="ringtone">铃声</string>
+    <string name="ringtone_default">默认铃声</string>
+    <string name="vibrate">振动</string>
+    <string name="activity_btn_delete">删除提醒</string>
+
+    <!---->
+    <string name="fragment_item_theme_theme">主题</string>
+    <string name="fragment_item_theme_chart">图表</string>
+
+    <string name="fragment_item_assist_quick_start">快速建立</string>
+    <string name="fragment_item_assist_light">呼吸灯</string>
+    <string name="fragment_item_assist_clipboard">监听剪切板</string>
+    <string name="fragment_item_assist_auto_clear">自动清理</string>
+    <string name="fragment_item_assist_import_excel">批量导入提醒(Excel)</string>
+    <string name="fragment_item_assist_clear_all">清除所有提醒数据</string>
+    <string name="fragment_item_author">作者</string>
+    <string name="author">疾风Hua</string>
+    <string name="fragment_search_hint">搜索应用</string>
+    <string name="fragment_apps_item_listen">监听应用通知</string>
+    <string name="fragment_apps_item_remove_notify">监听后移除通知</string>
+    <string name="loading">加载中...</string>
+    <string name="fragment_item_version">版本</string>
+    <string name="fragment_item_feedback">反馈测试信息</string>
+    <string name="fragment_item_assist_excel_sheet_hint">Sheet号</string>
+    <string name="fragment_item_assist_excel_time_hint">时间列号</string>
+    <string name="fragment_item_assist_excel_location_hint">事件/地点列号</string>
+    <string name="fragment_item_assist_excel_detail_hint">详细信息列号</string>
+    <string name="fragment_item_assist_excel_file">选择Excel文档</string>
+    <string name="fragment_item_assist_excel_path">未选择文档</string>
+    <string name="toast_empty_folder">空文件夹</string>
+    <string name="toast_select_excel_file">请选择Excel文档</string>
+    <string name="toast_sdcard_not_exist">SD卡不存在</string>
+    <string name="activity_file_search_hint">在当前目录下搜索</string>
+    <string name="actionbar_disk">存储盘</string>
+
+    <string name="btn_app_add">添加</string>
+    <string name="btn_app_added">已添加</string>
+    <string name="fragment_excel_toast">请先填入上面的时间、地点、详细在excel中相应的列号</string>
+    <string name="fragment_dialog_msg">正在导入数据，你可以继续进行其他操作...</string>
+    <string name="toast_data_import_finish">数据导入完成</string>
+    <string name="fragment_item_assist_auto_load_count">自动加载提醒条数</string>
+    <string name="auto_load_all">全部加载</string>
+    <string name="upgrade_info">1.全新配色和首页，更加清新舒适。\n\n2.设置增加分页条数的限制，并且列表滑动到底部自动加载更多\n\n3.操作方式修改，首页提醒列表单击开启或关闭提醒，长按进入编辑</string>
+    <string name="fragment_item_guide">再看一次引导说明</string>
+    <string name="main_list_item_no_detail">未设置详细信息</string>
+
+</resources>

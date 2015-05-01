@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="remind_array">
+        <item>不提前</item>
+        <item>提前十分钟提醒</item>
+        <item>提前半小时提醒</item>
+        <item>提前一小时提醒</item>
+        <item>提前三小时提醒</item>
+        <item>提前一天提醒</item>
+    </string-array>
+    <string-array name="pre_settings_theme_name">
+        <item>魅蓝</item>
+        <item>草绿</item>
+        <item>麦黄</item>
+        <item>骚红</item>
+    </string-array>
+
+    <string-array name="setting_actionbar_title">
+        <item>@string/actionbar_theme</item>
+        <item>@string/actionbar_assit</item>
+        <item>@string/actionbar_data</item>
+        <item>@string/actionbar_apps</item>
+        <item>@string/actionbar_about</item>
+    </string-array>
+
+    <string-array name="pre_settings_theme_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="pre_settings_chart_name">
+        <item>柱图</item>
+        <item>饼图</item>
+    </string-array>
+    <string-array name="pre_settings_chart_value">
+        <item>0</item>
+        <item>2</item>
+    </string-array>
+
+</resources>

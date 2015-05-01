@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/listItemHeight"
+        android:paddingLeft="@dimen/paddingLeft"
+        android:paddingRight="@dimen/paddingRight"
+        android:orientation="vertical"
+        android:background="@drawable/selector_list_item"
+        android:descendantFocusability="blocksDescendants"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:focusable="false"
+            android:gravity="center_vertical|left"
+            android:text="@string/fragment_item_author"
+            android:textColor="@color/black"
+            android:textSize="@dimen/mainText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:gravity="center_vertical|left"
+            android:text="@string/author"
+            android:textColor="@color/summary"
+            android:textSize="@dimen/summaryText" />
+    </LinearLayout>
+
+    <include layout="@layout/divider_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/listItemHeight"
+        android:paddingLeft="@dimen/paddingLeft"
+        android:paddingRight="@dimen/paddingRight"
+        android:orientation="vertical"
+        android:background="@drawable/selector_list_item"
+        android:descendantFocusability="blocksDescendants"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:focusable="false"
+            android:gravity="center_vertical|left"
+            android:text="@string/fragment_item_version"
+            android:textColor="@color/black"
+            android:textSize="@dimen/mainText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:gravity="center_vertical|left"
+            android:text="@string/app_version"
+            android:textColor="@color/summary"
+            android:textSize="@dimen/summaryText" />
+    </LinearLayout>
+    <include layout="@layout/divider_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <RelativeLayout android:id="@+id/rl_fragment_setting_guide"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/listItemHeight"
+        android:paddingLeft="@dimen/paddingLeft"
+        android:paddingRight="@dimen/paddingRight"
+        android:orientation="vertical"
+        android:background="@drawable/selector_list_item"
+        android:descendantFocusability="blocksDescendants"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:focusable="false"
+            android:gravity="center_vertical|left"
+            android:text="@string/fragment_item_guide"
+            android:textColor="@color/black"
+            android:textSize="@dimen/mainText" />
+    </RelativeLayout>
+    <include layout="@layout/divider_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <RelativeLayout android:id="@+id/rl_fragment_setting_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/listItemHeight"
+        android:paddingLeft="@dimen/paddingLeft"
+        android:paddingRight="@dimen/paddingRight"
+        android:orientation="vertical"
+        android:background="@drawable/selector_list_item"
+        android:descendantFocusability="blocksDescendants"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:focusable="false"
+            android:gravity="center_vertical|left"
+            android:text="@string/fragment_item_feedback"
+            android:textColor="@color/black"
+            android:textSize="@dimen/mainText" />
+    </RelativeLayout>
+    <include layout="@layout/divider_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</LinearLayout>

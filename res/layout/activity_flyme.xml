@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_flyme"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView android:id="@+id/lv_flyme_left"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"></ListView>
+    <LinearLayout
+        android:layout_width="1dip"
+        android:layout_height="match_parent"
+        android:background="#ffc8c8c8"></LinearLayout>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></FrameLayout>
+    <ListView android:id="@+id/lv_flyme_right"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"></ListView>
+    <LinearLayout
+        android:id="@+id/ll_flyme_pb"
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+
+            android:indeterminateDrawable="@drawable/progress_bar_style_color"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正在加载..."
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+</LinearLayout>
