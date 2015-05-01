@@ -28,7 +28,6 @@ public class NLService extends NotificationListenerService {
 
     @Override
     public void onNotificationPosted(StatusBarNotification sbn) {
-        Log.d("TAG", "onNotificationPosted");
         if (preference.getBoolean(PrefenceKeyConstants.SETTING_APPS_NOTIFY, true) && Build.VERSION.SDK_INT >= 18) {
 //            String tickerText = sbn.getNotification().tickerText.toString();
             String text = null;
@@ -101,7 +100,6 @@ public class NLService extends NotificationListenerService {
     public void onCreate() {
         super.onCreate();
         preference = PreferenceManager.getDefaultSharedPreferences(this);
-        Log.d("TAG", "onCreate");
 
     }
 }

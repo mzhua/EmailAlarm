@@ -46,10 +46,7 @@ public class PatternMatcherUtils {
             if (!matcher.find()) {
                 matcher = pTime.matcher(clipData);
                 if (!matcher.find()) {
-                    matcher = pMonth.matcher(clipData);
-                    if (!matcher.find()) {
-                        return false;
-                    }
+                   return false;
                 }
             }
         }

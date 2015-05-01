@@ -24,5 +24,9 @@
     <orderEntry type="library" exported="" name="android-support-v4" level="project" />
     <orderEntry type="module" module-name="pulltorefresh-library" exported="" />
     <orderEntry type="library" exported="" name="nineoldandroids-2.4.0-2" level="project" />
+    <orderEntry type="module" module-name="pulltorefresh-library" />
+    <orderEntry type="module" module-name="MPChartLib" />
+    <orderEntry type="module" module-name="library" />
+    <orderEntry type="library" name="android-support-v4" level="project" />
   </component>
 </module>
