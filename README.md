@@ -6,7 +6,7 @@
 本项目主要用于自己对于Android下一些常用组件和方法的实现的一个笔记集合。
 
 这是为Android编写的一个程序，主要为了实现监听剪切板，如果里面有需要设定闹钟提醒的事件时，则自动新建提醒
-
+---------------------
 目前项目所使用方法或技术：
 1、Listview展示，notify更新
 2、MPAndroid图表库的使用
@@ -22,12 +22,8 @@
 12、AlertDialog的使用
 13、沉浸式顶栏，ActionBar高度的获取
 14、BroadCast的使用
+15、4.3版本后的notification listene service 的使用
 
-
-目前效果图
-![image](https://github.com/mzhua/EmailAlarm/raw/master/art/1.jpg)
-![image](https://github.com/mzhua/EmailAlarm/raw/master/art/2.jpg)
-![image](https://github.com/mzhua/EmailAlarm/raw/master/art/3.jpg)
 
 开发者：
 疾风Hua
